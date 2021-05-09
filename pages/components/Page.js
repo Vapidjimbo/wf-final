@@ -14,9 +14,7 @@ export default function Page({ children }) {
       <Container fluid className="m-auto">
         <Header />
         <main className="border border-1 rounded">
-            {items.map((item) => (
-              <span key={item.key}>{item}</span>
-            ))}
+            {items.map((item) => (item))}
         </main>
         <Footer />
       </Container>
