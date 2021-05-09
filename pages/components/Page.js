@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <NextHead/>
