@@ -10,7 +10,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Home() {
   return (
     <>
-      <Page>
+      <Page >
         <Jumbotron fluid className="mb-1">
           <Container className="text-center">
             <h2>Welcome to Best Devs Ever!</h2>
@@ -22,7 +22,7 @@ export default function Home() {
             <Button>Contact Us</Button>
           </Container>
         </Jumbotron>
-        <section className="my-5">
+        <section className="my-5 mx-3">
           <h2 className="text-center">Services</h2>
           <Row>
             <Col>
@@ -68,10 +68,10 @@ export default function Home() {
         </section>
         <section>
           <h2 className="text-center">Recent Projects</h2>
-          <Carousel>
+          <Carousel className="w-75 m-auto border border-5 rounded">
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 m-auto"
                 src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                 alt="First slide"
               />
@@ -84,7 +84,7 @@ export default function Home() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 m-auto"
                 src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                 alt="Second slide"
               />
@@ -96,7 +96,7 @@ export default function Home() {
             </Carousel.Item>
             <Carousel.Item>
               <img
-                className="d-block w-100"
+                className="d-block w-100 m-auto"
                 src="https://images.pexels.com/photos/5474295/pexels-photo-5474295.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                 alt="Third slide"
               />

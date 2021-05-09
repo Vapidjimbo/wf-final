@@ -1,9 +1,5 @@
 import NextHead from "./PageChildren/Head";
-//import styles from "../styles/Home.module.css";
-//import Button from 'react-bootstrap/Button';
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Header from "./PageChildren/Header";
 import Footer from "./PageChildren/Footer";
 import React from "react";
@@ -15,9 +11,9 @@ export default function Page({ children }) {
   return (
     <>
       <NextHead />
-      <Container fluid>
+      <Container fluid className="m-auto">
         <Header />
-        <main>
+        <main className="border border-1 rounded">
             {items.map((item) => (
               <span key={item.key}>{item}</span>
             ))}
