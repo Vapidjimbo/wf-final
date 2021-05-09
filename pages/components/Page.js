@@ -1,24 +1,28 @@
-import NextHead from './components/Head'
+import NextHead from "./PageChildren/Head";
 //import styles from "../styles/Home.module.css";
 //import Button from 'react-bootstrap/Button';
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./PageChildren/Header";
+import Footer from "./PageChildren/Footer";
+import React from "react";
+import ReactDOM from "react-dom";
 
-export default function Page() {
+export default function Page({ children }) {
+  let items = React.Children.toArray(children);
+  console.log(items);
   return (
     <>
-      <NextHead/>
+      <NextHead />
       <Container fluid>
-        <body>
-          <Header />
-          <main>
-            
-          </main>
-          <Footer />
-        </body>
+        <Header />
+        <main>
+            {items.map((item) => (
+              <span key={item.key}>{item}</span>
+            ))}
+        </main>
+        <Footer />
       </Container>
     </>
   );

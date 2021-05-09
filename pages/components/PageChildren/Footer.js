@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 
 export default function Footer() {
   return (
-    <footer className="position-absolute top-100 start-50 translate-middle w-100 p-3 text-center">
+    <footer className="p-3 text-center">
         <Row>
           <Col>Site Info</Col>
           <Col>Links</Col>
