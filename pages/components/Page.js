@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Header from "./PageChildren/Header";
 import Footer from "./PageChildren/Footer";
 import React from "react";
-import ReactDOM from "react-dom";
 
 export default function Page({ children }) {
   let items = React.Children.toArray(children);

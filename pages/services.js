@@ -2,12 +2,13 @@ import Page from "./components/Page";
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Figure from "react-bootstrap/Figure";
 
 export default function Services() {
   return (
     <Page>
-      <section className="m-5 p-5">
-          <h2 className="text-center">Services</h2>
+      <section className="m-5 ">
+        <h2 className="text-center">Services</h2>
         <Accordion defaultActiveKey="0">
           <Card>
             <Card.Header>
@@ -16,7 +17,19 @@ export default function Services() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">
-              <Card.Body>Hello! I'm the body</Card.Body>
+              <Card.Body>
+                <Figure>
+                  <Figure.Image
+                    width={171}
+                    height={180}
+                    alt="171x180"
+                    src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                  <Figure.Caption>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </Figure.Caption>
+                </Figure>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
@@ -26,7 +39,19 @@ export default function Services() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="1">
-              <Card.Body>Hello! I'm another body</Card.Body>
+              <Card.Body>
+                <Figure>
+                  <Figure.Image
+                    width={171}
+                    height={180}
+                    alt="171x180"
+                    src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                  <Figure.Caption>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </Figure.Caption>
+                </Figure>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
           <Card>
@@ -36,7 +61,19 @@ export default function Services() {
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="2">
-              <Card.Body>Hello! I'm another body</Card.Body>
+              <Card.Body>
+                <Figure>
+                  <Figure.Image
+                    width={171}
+                    height={180}
+                    alt="171x180"
+                    src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                  <Figure.Caption>
+                    Nulla vitae elit libero, a pharetra augue mollis interdum.
+                  </Figure.Caption>
+                </Figure>
+              </Card.Body>
             </Accordion.Collapse>
           </Card>
         </Accordion>
