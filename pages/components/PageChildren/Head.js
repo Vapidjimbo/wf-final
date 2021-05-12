@@ -1,5 +1,7 @@
 import Head from "next/head";
 
+//Head
+
 export default function NextHead() {
     return (
       <>

@@ -4,6 +4,8 @@ import Header from "./PageChildren/Header";
 import Footer from "./PageChildren/Footer";
 import React from "react";
 
+//Page Layout. Made custom 
+
 export default function Page({ children }) {
   let items = React.Children.toArray(children);
   console.log(items);
